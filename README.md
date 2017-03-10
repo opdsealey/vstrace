@@ -1,12 +1,16 @@
 # vstrace
 A simple visualisation / display tool for strace. Might even get finished one day
 
-Example Usage
-  *python vstrace -s open close write -p ls -la /tmp*
+*Example Usage*
+```
+  python vstrace -s open close write -p ls -la /tmp
+  ```
+
+```
+  python vstrace -h
   
-  *python vstrace -h*
-  
-```usage: vstrace.py [-h] -s SYSCALLS [SYSCALLS ...] -p PROGRAM [PROGRAM ...]
+
+usage: vstrace.py [-h] -s SYSCALLS [SYSCALLS ...] -p PROGRAM [PROGRAM ...]
                   [-v] [-d] [-ng | -g GRAPH_NAME]
 
 optional arguments:
