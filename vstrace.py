@@ -69,7 +69,6 @@ class visualStrace():
         line_buffer = ""
         #process strace lines
         for line in iter(proc.stderr.readline, ''):
-            print line_buffer
             if re.match(r'\w+\(.*?\)\s+=\s+-?[0-9]+', line_buffer):
                 line = line_buffer
                 self.parse(line)
